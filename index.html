@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+    <title>Climate Analysis</title>
+    <style type="text/css">
+            p {
+                font-size: 30px;
+            }
+            li {
+                font-size: 25px;
+            }
+            h1 {
+                background-color: black;
+                color: yellow;
+            }
+            .shadow{
+                box-shadow: 5px 10px #888888;
+            }
+            .sectionback{
+                background-color: tomato;
+            }
+            .font2{
+                font-size: 25px
+            }
+            .whiteback{
+                background-color: whitesmoke;
+                color: black;
+            }
+
+            ul {
+                border: 1px solid whitesmoke;
+                }
+    </style>
+</head>
+<body background="Resources/Hawaii.jpg">
+<h1>Climate Analysis Project and API</h1>
+<h3>Grab your board shorts. Surfs up dudes!</h3>
+<img class="shadow" src="images/surfs-up.jpeg" height="200" width="400"/>
+<section>
+	<p class="font2">
+            Hooray! We've decided to treat ourselves to a long holiday vacation in Honolulu, Hawaii! 
+            <br>
+            To help with your trip planning, we have prepared some insightful API entry points.
+    </p>
+    <div id="7" width="200"><p class="border1 whiteback shadow">Available Routes</p></div>
+	<ul class="shadow">
+		<li><a href="Resources/precipitation.json" target="_blank">/api/v1.0/precipitation</a></li>
+        <li><a href="Resources/stations.json" target="_blank">/api/v1.0/stations</a></li>
+        <li><a href="Resources/tobs.json" target="_blank">/api/v1.0/tobs</a></li>
+        <li><a href="Resources/begindate.json" target="_blank" onclick="javascript:alert('Use date format of 2016-08-19')">/api/v1.0/begindate</a></li>
+        <li><a href="Resources/begindateenddate.json" target="_blank" onclick="javascript:alert('Use date format of 2016-08-19')">/api/v1.0/begindate/enddate</a></li>
+    </ul>
+</section>
+</body>
+</html>
